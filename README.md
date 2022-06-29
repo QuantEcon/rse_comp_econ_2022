@@ -1,11 +1,13 @@
 # RSE Computational Economics Workshop
 
+![](qe-logo-large.png)
+
 ## An introduction to computational methods for economics and finance
 
-Date and time: 10:00am Friday, 22 Jul 2022
-Duration: two hours
-Location: CBE Building Lecture Theatre 1(Building #26C) ANU Canberra
-Lead instructor: John Stachurski
+* Date and time: 10:00am Friday, 22 Jul 2022
+* Duration: two hours
+* Location: CBE Building Lecture Theatre 1(Building #26C) ANU Canberra
+* Lead instructor: John Stachurski
 
 ## Content
 
