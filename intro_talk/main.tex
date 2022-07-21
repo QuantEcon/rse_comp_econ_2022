@@ -188,13 +188,12 @@
 
 
 
-\title{Computational Modeling for Economists}
+\title{RSE Computational Economics Workshop}
 
-\subtitle{An Introduction using Python}
+\author{An introduction to computational methods \\ for economics and finance}
 
-\author{A QuantEcon--RSE Collaboration}
 
-\date{February 2020}
+\date{10:00am -- 12:00am 22nd July 2022}
 
 
 \begin{document}
@@ -207,43 +206,37 @@
 
 
 
-\section{Schedule}
+\section{Introduction}
 
 
 
 \begin{frame}
-    \frametitle{Introduction}
+    %\frametitle{Introduction}
 
-
-    \textbf{Lecturers}
+    \textbf{Personel}
 
     \begin{itemize}
-        \item \green{Matt McKay}
+        \item \green{Aakash Choudhury (RSE, Developer)}
             \vspace{0.5em}
-        \item \green{John Stachurski}
+        \item \green{Shu Hu (RSE, PhD student)}
+            \vspace{0.5em}
+        \item \green{John Stachurski (RSE, Professor)}
             \vspace{0.5em}
     \end{itemize}
 
-            \vspace{0.5em}
-            \vspace{0.5em}
-
-    \textbf{Plan}
+    \textbf{Topics}
 
     \begin{itemize}
-        \item Review introductory QuantEcon lectures 
+        \item Introduction to Scientific Computing
+        \vspace{0.5em}
+        \item Installation of Anaconda Python
+        \vspace{0.5em}
+        \item Working with Data
+        \vspace{0.5em}
+        \item High Performance Computing
     \end{itemize}
 
 
-
-            \vspace{0.5em}
-            \vspace{0.5em}
-
-    \textbf{Thanks}
-
-
-    \begin{itemize}
-        \item Alfred P. Sloan Foundation, Research School of Economics
-    \end{itemize}
 
 \end{frame}
 
@@ -251,64 +244,36 @@
 
 
 \begin{frame}
-    \frametitle{Downloads / Installation }
 
-    \green{Install Python + Scientific Libs}
-    
-    \begin{itemize}
-        \item Install Anaconda from {\footnotesize \url{https://www.anaconda.com/downloads}}
-        \vspace{1em}
-            \begin{itemize}
-                \item Select latest Python version (3.7)
-                \item For your OS!
-            \end{itemize}
-        \vspace{1em}
-        \item Not plain vanilla Python
-    \end{itemize}
-
-
-    \vspace{1em}
-
-    \green{Remote options}
-
-    \begin{itemize}
-        \item \url{https://colab.research.google.com}
-        \item etc.
-    \end{itemize}
-
-
-\end{frame}
-
-
-
-
-
-
-\begin{frame}
-    \frametitle{Prereqs / Aims / Outcomes }
 
     Assumptions:
 
     \begin{itemize}
         \item econ/computer/maths/stats literate
         \vspace{0.3em}
-        \item no familiarity with Python
+        \item some basic familiarity with computers
     \end{itemize}
 
     \vspace{0.3em}
     \vspace{0.3em}
-
+    \vspace{0.5em}
     Aims:
-    %
+
     \begin{itemize}
-        \item Overview of scientific computing and Python
-            \vspace{0.3em}
-        \item Review some simple economic models
-            \vspace{0.3em}
-        \item Show how to solve such models with Python
-            \vspace{0.3em}
-        \item Prep for remainder of the course
+        \item Discuss options
+    \vspace{0.5em}
+        \item See what's possible
     \end{itemize}
+
+    \vspace{0.5em}
+    \vspace{0.5em}
+    \vspace{0.5em}
+    \textbf{Resources}
+
+    \begin{itemize}
+        \item \url{https://github.com/QuantEcon/rse_comp_econ_2022}
+    \end{itemize}
+
 
 \end{frame}
 
@@ -359,7 +324,7 @@
     \begin{itemize}
         \item C/C++
         \item Fortran
-        \item Java
+        \item Rust
     \end{itemize}
 
     \vspace{1em}
@@ -369,7 +334,7 @@
     \begin{itemize}
         \item Python
         \item Ruby
-        \item Javascript
+        \item TypeScript
     \end{itemize}
 
 \end{frame}
@@ -423,7 +388,6 @@ popq    %rbp
     \end{minted}
 
 \end{frame}
-
 
 
 \begin{frame}
@@ -546,6 +510,7 @@ popq    %rbp
 \end{frame}
 
 
+
 \begin{frame}
     \frametitle{Trend 2: Distributed Computing}
     
@@ -556,7 +521,7 @@ popq    %rbp
         \vspace{0.5em}
         \item customized execution environments
         \vspace{0.5em}
-        \item circumvent internal IT departments
+        \item circumvent annoying internal IT departments
     \end{itemize}
 
     \vspace{0.5em}
@@ -576,16 +541,87 @@ popq    %rbp
 
 
 
-\section{Why Python?}
+\section{Which Language?}
 
 
 \begin{frame}
-    \frametitle{Why Python?}
+    \frametitle{Which Language}
+
+
+    How about R?
+    \vspace{0.5em}
+
+    \begin{itemize}
+        \item Specialized to statistics
+            \vspace{0.5em}
+        \item Easy to learn, well designed
+            \vspace{0.5em}
+        \item Huge range of estimation routines
+            \vspace{0.5em}
+        \item Significant demand for R programmers
+            \vspace{0.5em}
+        \item Popular in academia 
+    \end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
+    
+    However loosing ground to Python
+            \vspace{0.5em}
+            \vspace{0.5em}
+            \vspace{0.5em}
+
+    \Eg Chris Wiggins, Chief Data Scientist at The New York Times:
+
+            \vspace{0.5em}
+     ``Python has gotten sufficiently weapons grade that we don't descend into
+     R anymore. Sorry, R people. I used to be one of you but we no longer
+     descend into R.''
+
+
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Julia}
+
+    Pros:
+    
+    \begin{itemize}
+        \item Fast and elegant
+            \vspace{0.5em}
+        \item Many scientific routines
+            \vspace{0.5em}
+        \item Julia is written in Julia
+    \end{itemize}
+
+            \vspace{0.5em}
+            \vspace{0.5em}
+            \vspace{0.5em}
+    Cons:
+    
+    \begin{itemize}
+        \item Some stability issues
+            \vspace{0.5em}
+        \item Failing to achieve rapid growth
+    \end{itemize}
+
+\end{frame}
+
+
+
+
+\begin{frame}
+    \frametitle{Python}
     
     \begin{itemize}
         \item Easy to learn, well designed
             \vspace{0.5em}
         \item Massive scientific ecosystem
+            \vspace{0.5em}
+        \item Heavily supported by big players
             \vspace{0.5em}
         \item Open source
             \vspace{0.5em}
@@ -593,6 +629,8 @@ popq    %rbp
     \end{itemize}
 
 \end{frame}
+
+
 
 
 \begin{frame}
@@ -610,39 +648,15 @@ popq    %rbp
             \vspace{0.5em}
         \item Tensorflow, PyTorch (machine learning, AI)
             \vspace{0.5em}
-        \item JAX, NetworkX, etc., etc.
+        \item JAX (JIT compilation, parallelization), etc., etc.
     \end{itemize}
 
 \end{frame}
 
 \begin{frame}
     
-    Python is convenient because it covers so many bases
 
-            \vspace{0.5em}
-            \vspace{0.5em}
-    \begin{itemize}
-        \item web dev, databases, system admin, GUIs
-    \end{itemize}
-
-            \vspace{0.5em}
-            \vspace{0.5em}
-
-    Chris Wiggins, Chief Data Scientist at The New York Times:
-
-            \vspace{0.5em}
-    \begin{center}
-        Python has gotten sufficiently weapons grade that we don't descend into R anymore. Sorry, R people. I used to be one of you but we no longer descend into R.
-    \end{center}
-
-
-\end{frame}
-
-
-\begin{frame}
-    
-
-    As a result of these advantages:
+    Popularity, others vs one Python library (pandas)
 
     \begin{figure}
        \begin{center}
@@ -657,25 +671,94 @@ popq    %rbp
 
 
 
+
+
+
+\section{Set Up}
+
+
+
+
+
+
+
 \begin{frame}
-    \frametitle{Using Jupyter Notebooks}
+    \frametitle{Downloads / Installation / Troubleshooting}
+
+    \green{Install Python + Scientific Libs (Optional!)}
+    
+    \begin{itemize}
+        \item Install Anaconda from {\footnotesize \url{https://www.anaconda.com/}}
+        \vspace{1em}
+            \begin{itemize}
+                \item Select latest version 
+                \item For your OS
+                \item Say ``yes'' at prompts
+            \end{itemize}
+        \vspace{1em}
+        \item Not plain vanilla Python
+    \end{itemize}
+
+
+    \vspace{1em}
+
+    \green{Remote options}
 
     \begin{itemize}
-        \item Dashboard and notebooks
-        \item Modal editing
-        \item Arithmetic
-        \item Strings
-        \item Variables (including unicode)
-        \item Built in functions
-        \item Getting help
-        \item Repetition: Introduction to loops
-        \item Documentation and rich text (markdown, LaTeX)
+        \item \url{https://colab.research.google.com}
+        \item \url{https://www.pythonanywhere.com/}
     \end{itemize}
+
 
 \end{frame}
 
 
 
+\begin{frame}
+    \frametitle{Jupyter Notebooks}
+
+    A browser based interface to Python / Julia / R / etc.
+
+
+    \vspace{2em}
+
+    \begin{itemize}
+        \item Search for \texttt{jupyter notebook}
+    \end{itemize}
+
+    \vspace{2em}
+
+    Useful for:
+
+    \begin{itemize}
+        \item getting started
+        \item exploring ideas
+    \end{itemize}
+
+
+
+
+
+\end{frame}
+
+
+
+\begin{frame}
+    \frametitle{Working with Notebooks}
+
+    \begin{itemize}
+        \item Entry and execution
+    \vspace{1em}
+        \item Markdown
+    \vspace{1em}
+        \item Getting help
+    \vspace{1em}
+        \item Copy paste
+    \vspace{1em}
+        \item Edit and command mode
+    \end{itemize}
+
+\end{frame}
 
 
 

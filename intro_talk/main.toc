@@ -1,4 +1,5 @@
-\beamer@sectionintoc {1}{Schedule}{2}{0}{1}
-\beamer@sectionintoc {2}{Overview}{5}{0}{2}
-\beamer@sectionintoc {3}{Trends}{15}{0}{3}
-\beamer@sectionintoc {4}{Why Python?}{19}{0}{4}
+\beamer@sectionintoc {1}{Introduction}{2}{0}{1}
+\beamer@sectionintoc {2}{Overview}{4}{0}{2}
+\beamer@sectionintoc {3}{Trends}{14}{0}{3}
+\beamer@sectionintoc {4}{Which Language?}{18}{0}{4}
+\beamer@sectionintoc {5}{Set Up}{24}{0}{5}
