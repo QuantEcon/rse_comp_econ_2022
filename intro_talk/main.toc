@@ -1,0 +1,4 @@
+\beamer@sectionintoc {1}{Schedule}{2}{0}{1}
+\beamer@sectionintoc {2}{Overview}{5}{0}{2}
+\beamer@sectionintoc {3}{Trends}{15}{0}{3}
+\beamer@sectionintoc {4}{Why Python?}{19}{0}{4}
